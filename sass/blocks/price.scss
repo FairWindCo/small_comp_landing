@@ -1,0 +1,17 @@
+﻿.price{
+  font-weight: bold;
+  color: #ff7575;
+	&::after{
+		content:" грн.";;
+	}
+}
+
+
+.price-old{
+  font-weight: bold;
+  text-decoration:line-through;
+  &::after{
+    content:" грн,";;
+  }
+}
+

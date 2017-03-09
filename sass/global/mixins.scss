@@ -1,0 +1,71 @@
+@mixin width-container {
+  text-align: left;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin container() {
+  width: 320px;
+  @media #{$tablet-width} {
+    width: 768px;
+  }
+  @media #{$desktop-width} {
+    width: 1200px;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin absolute-pseudo-element($top: auto, $left: auto, $bottom: auto, $right: auto) {
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin about-us-icon($url) {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  top: -6px;
+  left: -6px;
+  background: url($url) no-repeat;
+  background-position: 50% 50%;
+}
+
+@mixin form-element($top, $left) {
+  content: "";
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+  height: 36px;
+  width: 36px;
+  border: 2px solid $dark-gray;
+}

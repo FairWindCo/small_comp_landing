@@ -1,0 +1,49 @@
+.propouseWindow{
+  min-width:20%;
+  min-height:150px;
+  flex:0 1 350px;
+  background-color:$dark-blur-panel;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(0,0,0,.9);
+  padding:5px;
+  font-size:18px;
+  font-weight:bold;
+  color:white;
+  border:1px solid white;
+  text-align: center;
+  z-index: 10;
+}
+
+.propouseWindow--header{
+  width: 100%;
+  background: $action-color;
+  padding: 3px 0;
+  @include clearfix();
+}
+
+.with-flag{
+  position:relative;
+  &:hover::after{
+    content:'';
+    display: block;
+    background:url('../images/price.png') transparent no-repeat center center;
+    background-size:contain;
+    height:70px;
+    width:80px;
+    position:absolute;
+    bottom:-45px;
+    left:-5px;
+    border:none;
+    border-width:0px;
+  }
+}
+
+.mobile-hidden-panel{
+  display: none;
+}
+
+@media #{$tablet-width} {
+  .mobile-hidden-panel{
+    display: block;
+  }
+}

@@ -1,0 +1,16 @@
+ #scrollup {
+	position: fixed; /* фиксированная позиция */
+	opacity: 0.8; /* прозрачность */
+	padding: 10px 5px 5px; /* отступы */
+	background: #aaa;
+	border-radius: 2px; /* скругление углов */
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	left: 10px; /* отступ слева */
+	bottom: 10px; /* отступ снизу */
+	display: none; /* спрятать блок */
+	cursor: pointer;
+}
+#scrollup img{
+	width:30px;
+}

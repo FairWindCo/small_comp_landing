@@ -1,0 +1,75 @@
+.gradient-background {
+  background-color: $gradint-start-color;
+  background-image: -moz-linear-gradient(top,$gradint-start-color,$gradint-end-color);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from($gradint-start-color),to($gradint-end-color));
+  background-image: -webkit-linear-gradient(top,$gradint-start-color,$gradint-end-color);
+  background-image: -o-linear-gradient(top,$gradint-start-color,$gradint-end-color);
+  background-image: linear-gradient(to bottom,$gradint-start-color,$gradint-end-color);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradint-start-color', endColorstr='$gradint-end-color', GradientType=0);
+}
+
+
+header{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  width:100%;
+}
+
+.headerContainer{
+  display:flex;
+  flex-wrap:wrap;
+  align-content:stretch;
+  justify-content:flex-end;
+  align-items:center;
+
+}
+.headerContainer .logo_wrapper{
+  flex:12 0 150px;
+}
+
+.headerContainer .phones{
+  font-size: 14px;
+  text-align:right;
+  margin-right:10px;
+  flex:2 1 140px;
+}
+.headerContainer .schedule{
+  flex:1 1 90px;
+  font-size: 13px;
+}
+
+.headerContainer .logo{
+  margin-right:auto;
+}
+.phones div{
+  display:inline-block;
+}
+
+.phones .mts {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: url(../images/mbo-ico.png) no-repeat 0 0;
+  position: relative;
+  background-position: 0 -38px;
+}
+
+.phones .kstar {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: url(../images/mbo-ico.png) no-repeat 0 0;
+  position: relative;
+  background-position: 0 -16px;
+}
+
+.phones .life {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: url(../images/mbo-ico.png) no-repeat 0 0;
+  position: relative;
+}

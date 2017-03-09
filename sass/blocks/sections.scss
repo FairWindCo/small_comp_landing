@@ -1,0 +1,37 @@
+section {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.section-heading {
+  margin: 20px 0;
+  font-size: 150%;
+}
+
+.section-lead {
+  font-size: 110%;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.section-paragraph {
+  margin: 5px 0;
+
+}
+
+@media #{$tablet-width} {
+  section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .section-heading {
+  }
+  .section-lead {
+    margin: 15px 0;
+  }
+  .section-paragraph {
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,45 @@
+.row-block{
+  min-width:$mobile-base;
+  width:100%;
+  margin: 0px;
+  padding:1px 0;
+  @include clearfix();
+  padding-bottom: 10px;
+}
+
+.row-block--white{
+  background: $main-background;
+  color:black;
+  box-shadow: 2px 0 5px 2px #aedafa;
+}
+
+.row-block--blue{
+  background: $dark-blur-panel;
+  color:white;
+  box-shadow: -2px 0 5px 2px #000;
+}
+
+.row-block--white img,
+.row-block img{
+  max-width:80%;
+  float:none;
+  margin: 0 auto;
+  display:block;
+}
+
+@media (min-width: 768px) {
+  .row-block img {
+    float: left;
+    margin-right: 10px;
+    max-height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
+  }
+  .row-block--white img {
+    margin-right: 0px;
+    float: right;
+    margin-left: 10px;
+  }
+}
+
+

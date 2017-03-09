@@ -1,0 +1,27 @@
+﻿
+
+
+@import "colors.scss";
+@import "variables.scss";
+
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/layout.scss";
+
+
+
+@import "blocks/button.scss";
+@import "blocks/scrollup.scss";
+@import "blocks/price.scss";
+@import "blocks/row_blocks.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/sections.scss";
+@import "blocks/technical.scss";
+@import "blocks/futures.scss";
+@import "blocks/central_panel.scss";
+@import "blocks/modal.scss";
+@import "blocks/windowpanel.scss";
+@import "blocks/contact_form.scss";
+
